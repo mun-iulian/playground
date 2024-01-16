@@ -1,0 +1,16 @@
+name: Main pipeline
+
+on:
+  push:
+    branches:
+      - ** # Run CI on all branches
+
+jobs:
+  main:
+    name: Main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Hello world
+        run:
+          echo "This CI is running on branch ${{ github.ref }}"
