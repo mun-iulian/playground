@@ -1,6 +1,9 @@
 name: Main pipeline
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   main:
