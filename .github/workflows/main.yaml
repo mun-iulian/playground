@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Hello world
-        run:
+        run: 
           echo "This CI is running on branch ${{ github.ref }}"
