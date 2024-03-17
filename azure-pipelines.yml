@@ -10,3 +10,7 @@ steps:
 - script: |
     echo "Running on branch: $(Build.SourceBranch)"
   displayName: 'Hello world'
+
+- script: |
+    echo "Running on branch: $(Build.SourceBranch)"
+  displayName: 'Hello world 2'
