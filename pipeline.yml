@@ -1,0 +1,7 @@
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+    echo "Running on branch: $(Build.SourceBranch)"
+  displayName: 'pipelineee'
