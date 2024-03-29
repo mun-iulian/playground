@@ -5,3 +5,7 @@ steps:
 - script: |
     echo "Running on branch: $(Build.SourceBranch)"
   displayName: 'Hello world'
+
+- script: |
+    echo "Super duper secret task"
+  displayName: 'Super duper secret task'
