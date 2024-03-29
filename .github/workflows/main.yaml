@@ -3,7 +3,7 @@ name: Main pipeline
 on:
   push:
     branches:
-      - main
+      - '**'
 
 jobs:
   main:
@@ -14,3 +14,8 @@ jobs:
       - name: Hello world
         run: 
           echo "This CI is running on branch ${{ github.ref }}"
+
+      - name: Run super duper secret command if running on master
+        if: github.ref == 'refs/heads/main'
+        run:
+          echo "Super duper secret command"
