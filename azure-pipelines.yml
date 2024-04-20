@@ -2,7 +2,7 @@ pool:
   vmImage: ubuntu-latest
 
 trigger:
-- main
+- feature/*
 
 steps:
 - script: |
