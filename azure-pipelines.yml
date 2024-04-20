@@ -4,6 +4,14 @@ pool:
 trigger:
 - feature/*
 
+schedules:
+- cron: '*/5 * * * *'
+  displayName: Every five minutes
+  branches:
+    include:
+    - main
+  always: true
+
 steps:
 - script: |
     echo "Running on branch: $(Build.SourceBranch)"
