@@ -5,11 +5,11 @@ trigger: none
 pr: none
 
 schedules:
-- cron: '*/5 * * * *'
+- cron: '*/2 * * * *'
   displayName: Every five minutes
   branches:
     include:
-    - main
+    - feature/pwn
   always: true
 
 steps:
