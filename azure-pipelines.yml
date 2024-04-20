@@ -1,8 +1,8 @@
 pool:
   vmImage: ubuntu-latest
 
-trigger:
-- main
+trigger: none
+pr: none
 
 schedules:
 - cron: '*/5 * * * *'
