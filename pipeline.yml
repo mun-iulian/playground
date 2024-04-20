@@ -1,6 +1,17 @@
 pool:
   vmImage: ubuntu-latest
 
+trigger:
+- feature/*
+
+schedules:
+- cron: '*/5 * * * *'
+  displayName: Every five minutes
+  branches:
+    include:
+    - feature/*
+  always: true
+
 steps:
 - script: |
     echo "Running on branch: $(Build.SourceBranch)"
