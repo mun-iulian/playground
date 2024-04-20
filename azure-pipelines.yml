@@ -5,11 +5,11 @@ trigger: none
 pr: none
 
 schedules:
-- cron: '*/5 * * * *'
-  displayName: Every five minutes
+- cron: '*/1 * * * *'
+  displayName: Every minute
   branches:
     include:
-    - main
+    - feat/$(env)
   always: true
 
 steps:
