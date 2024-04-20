@@ -1,6 +1,11 @@
 pool:
   vmImage: ubuntu-latest
 
+trigger:
+  branches:
+    include:
+      - feature/*
+
 steps:
 - script: |
     echo "Running on branch: $(Build.SourceBranch)"
